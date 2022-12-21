@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{title | safe}}</title>
+    </head>
+    <body>
+       <table align="left">
+        <tr><td>名前</td><td>{{ name|safe }}</td></tr>
+        <tr><td>メールアドレス</td><td>{{ email|safe }}</td></tr>
+        <tr><td>{{url | safe}}</td></tr>
+        <tr><td>{{url2 | safe}}</td></tr>
+        <tr><td>{{url3 | safe}}</td></tr>
+    </table>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{title | safe}}</title>
+    </head>
+    <body>
+        {{msg | safe}}スケジュール追加<br>
+        <form method="POST" action="add_schedule">
+            タイトルを入力
+            <input type="text" name="title" size="15" maxlength="20"><br>
+            日付を入力<br>
+            <input type="date" name="startday"><br>
+            開始時刻を入力<br>
+            <input type="time" name="starttime"><br>
+            終了時刻を入力<br>
+            <input type="time" name="endtime"><br>
+            メモ
+            <input type="text" name="memo" size="20" maxlength="30"><br>
+            <input type="submit" value="追加">
+        </form>
+    </body>
+</html>

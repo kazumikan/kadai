@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{title | safe}}</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/calendar.css')}}">
+    </head>
+    <body>
+        <div class="calendar=container">
+            <h1>Decenber 2022</h1>
+            <table class="calendar">
+                <tr>
+                    <th>SUN</th>
+                    <th>MON</th>
+                    <th>TUE</th>
+                    <th>WED</th>
+                    <th>THU</th>
+                    <th>FRI</th>
+                    <th>SAT</th>
+                </tr>
+                <tr class="day">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1<br>{{day1 | safe}}</td>
+                    <td>2<br>{{day2 | safe}}</td>
+                    <td>3<br>{{day3 | safe}}</td>
+                </tr>
+                <tr class="day">
+                    <td>4<br>{{day4 | safe}}</td>
+                    <td>5<br>{{day5 | safe}}</td>
+                    <td>6<br>{{day6 | safe}}</td>
+                    <td>7<br>{{day7 | safe}}</td>
+                    <td>8<br>{{day8 | safe}}</td>
+                    <td>9<br>{{day9 | safe}}</td>
+                    <td>10<br>{{day10 | safe}}</td>
+                </tr>
+                <tr class="day">
+                    <td>11<br>{{day11 | safe}}</td>
+                    <td>12<br>{{day12 | safe}}</td>
+                    <td>13<br>{{day13 | safe}}</td>
+                    <td>14<br>{{day14 | safe}}</td>
+                    <td>15<br>{{day15 | safe}}</td>
+                    <td>16<br>{{day16 | safe}}</td>
+                    <td>17<br>{{day17 | safe}}</td>
+                </tr>
+                <tr class="day">
+                    <td>18<br>{{day18 | safe}}</td>
+                    <td>19<br>{{day19 | safe}}</td>
+                    <td>20<br>{{day20 | safe}}</td>
+                    <td>21<br>{{day21 | safe}}</td>
+                    <td>22<br>{{day22 | safe}}</td>
+                    <td>23<br>{{day23 | safe}}</td>
+                    <td>24<br>{{day24 | safe}}</td>
+                </tr>
+                <tr class="day">
+                    <td>25<br>{{day25 | safe}}</td>
+                    <td>26<br>{{day26 | safe}}</td>
+                    <td>27<br>{{day27 | safe}}</td>
+                    <td>28<br>{{day28 | safe}}</td>
+                    <td>29<br>{{day29 | safe}}</td>
+                    <td>30<br>{{day30 | safe}}</td>
+                    <td>31<br>{{day31 | safe}}</td>
+                </tr>
+            </table>
+        </div>
+        
+    </body>
+</html>

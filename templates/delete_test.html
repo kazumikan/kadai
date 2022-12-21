@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{title | safe}}</title>
+    </head>
+    <body>
+        {{msg | safe}}<br>
+        削除画面<br>
+        <form method="POST" action="delete_test">
+            メールアドレスを入力
+            <input type="text" name="email" size="30" maxlength="30"><br>
+            パスワードを入力
+            <input type="text" name="password" size="20" maxlength="20"><br>
+            <input type="submit" value="削除">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{title | safe}}</title>
+    </head>
+    <body>
+        {{msg | safe}}ログイン画面<br>
+        <form method="POST" action="login_test">
+            メールアドレスを入力
+            <input type="text" name="email" size="30" maxlength="30"><br>
+            パスワードを入力
+            <input type="text" name="password" size="20" maxlength="20"><br>
+            <input type="submit" value="送信">
+            <br>
+        {{return_home | safe}}
+        </form>
+    </body>
+</html>
